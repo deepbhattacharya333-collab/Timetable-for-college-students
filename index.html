@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Student Timetable</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden; 
+        }
+
+        th {
+            background-color: #dcdcdc;
+            font-weight: bold;
+        }
+
+        th, td {
+            border: 1px solid #555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        
+        .monday    td { background-color: #ffe6e6; }  
+        .tuesday   td { background-color: #e6f7ff; }  
+        .wednesday td { background-color: #e8ffe6; }  
+        .thursday  td { background-color: #fff2cc; }  
+        .friday    td { background-color: #f3e6ff; }  
+
+        
+        tr:hover td {
+            background-color: #f0f0f0;
+        }
+
+        
+        td[rowspan] {
+            background-color: #fafafa ;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>B.Tech 1st Semester Timetable</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Day / Time</th>
+                <th>09:00 - 10:00</th>
+                <th>10:00 - 11:00</th>
+                <th>11:00 - 12:00</th>
+                <th>12:00 - 12:30</th>
+                <th>12:30 - 01:30</th>
+                <th>01:30 - 04:00</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr class="monday">
+                <td>Monday</td>
+                <td>Mathematics</td>
+                <td>English Comm.</td>
+                <td>Python</td>
+                <td rowspan="5">L<br>U<br>N<br>C<br>H</td>
+                <td>GFG/Quiz</td>
+                <td>Working on Project</td>
+            </tr>
+
+            <tr class="tuesday">
+                <td>Tuesday</td>
+                <td>HTML & CSS</td>
+                <td>Mathematics</td>
+                <td>JavaScript</td>
+                <td>Word Power</td>
+                <td>Working on Project</td>
+            </tr>
+
+            <tr class="wednesday">
+                <td>Wednesday</td>
+                <td>Mathematics</td>
+                <td>English Comm.</td>
+                <td>Python</td>
+                <td>GFG/Quiz</td>
+                <td>Working on Project</td>
+            </tr>
+
+            <tr class="thursday">
+                <td>Thursday</td>
+                <td>JavaScript</td>
+                <td>Mathematics</td>
+                <td>HTML & CSS</td>
+                <td>Novel Reading</td>
+                <td>Working on Project</td>
+            </tr>
+
+            <tr class="friday">
+                <td>Friday</td>
+                <td>Mathematics</td>
+                <td>English Comm.</td>
+                <td>Python</td>
+                <td>Typing Practice</td>
+                <td>Working on Project</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
+
